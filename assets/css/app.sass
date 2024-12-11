@@ -1,0 +1,132 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+@use 'variables' as *
+@use 'debug' as *
+@use 'header' as *
+@use 'hero' as *
+@use 'onlytext' as *
+@use 'threecart' as *
+@use 'seeallevent' as *
+
+
+html
+  margin: 0
+  padding: 0
+  scroll-behavior: smooth
+
+body
+  margin: 0
+  padding: 0
+  font-size: $default-font-size
+  font-family: $default-font-face
+
+html, body
+  font-family: "Hanken Grotesk", sans-serif
+
+.container
+  margin-top: 2rem
+  margin-bottom: 2rem
+  margin-left: auto
+  margin-right: auto
+  padding: 2rem
+  flex: 1
+  max-width: $breakpoint
+
+.section
+
+  margin: 1rem
+  padding: 2rem
+
+
+.footer
+  width: 100%
+  height: 6rem
+
+@media (max-width: $breakpoint)
+  .section
+    margin-left: 0.75rem
+    margin-right: 0.75rem
+
+
+// Add your custom CSS here
+// background colors
+.bg-color-white
+  background-color: #fff
+.bg-color-blue
+  background-color: #090541
+.bg-color-orange
+  background-color: #FF4600
+.bg-color-pink
+  background-color: #FF3198
+
+//colors
+.color-white
+  color: #fff
+.color-blue
+  color: #090541
+.color-orange
+  color: #FF4600
+.color-pink
+  color: #FF3198
+// display
+.flex
+  display: flex
+.justify-center
+  justify-content: center
+.justify-left
+  justify-content: left
+.items-center
+  align-items: center
+.gap-2
+  gap: 2rem
+.gap-1
+  gap: 1rem
+.gap-5
+  gap: 5rem
+.relative
+  position: relative
+.absolute
+  position: absolute
+//font-size
+.font-size-16
+  font-size: 16px
+.font-size-20
+  font-size: 20px
+.font-size-24
+  font-size: 24px
+.font-size-28
+  font-size: 28px
+.font-size-32
+  font-size: 32px
+.font-size-36
+  font-size: 36px
+.font-size-40
+  font-size: 40px
+.font-size-44
+  font-size: 44px
+
+//width
+.width-100
+  width: 100%
+.width-95
+  width: 95%
+.width-90
+  width: 90%
+.width-85
+  width: 85%
+.width-80
+  width: 80%
+.width-75
+  width: 75%
+.width-70
+  width: 70%
+.width-65
+  width: 65%
+.width-auto
+  width: auto
+
+
+
