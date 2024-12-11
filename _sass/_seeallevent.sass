@@ -1,30 +1,22 @@
+
+    
+    
+ //see all event text   
 .see-all-event-text
     position: relative
     font-size: 18px
     color: #070540
     font-weight: bold
     margin: 0
-    padding: 0
+    padding: 0 0 6rem 0
     text-align: center
 
-.see-all-event-text::before
-    position: absolute
-    content: ""
-    top: 0px
-    height: 2px
-    width: 250px
-    left: 0rem 
-    background-color: #df0000
-
-.see-all-event-text:hover::before
-    width: 250px
-    transition: width 0.5s ease-in-out
 
 .see-all-event-text::after 
       content: ''
       position: absolute
-      top: 0px
-      left: 0rem
+      margin-top: 0.9rem
+      margin-left: 7rem
       transform: translateY(-50%) rotate(-45deg)
       width: 10px /* Size of arrowhead */
       height: 10px /* Size of arrowhead */
@@ -32,5 +24,29 @@
       border-bottom: 2px solid #ff0000 /* Arrowhead color */
 
 .see-all-event-text:hover::after
-    left: 55.5rem
-    transition: left 0.5s ease-in-out
+    margin-left: 14.5rem
+    transition: margin-left 0.5s ease-in-out
+
+.see-all-event-text::before
+    position: absolute
+    content: ""
+    margin-top: 0.75rem
+    margin-left: 9rem
+    height: 3px
+    width: 120px
+    background-color: #df0000
+
+.see-all-event-text:hover::before
+    width: 240px
+    transition: width 0.5s ease-in-out
+
+//see all event section
+.see_event_img
+    position: absolute
+    right: 0px
+    top: -6rem
+
+.see-all-event-services
+    margin-top: 3rem
+    padding: 7rem 6rem 
+    background: transparent linear-gradient(119deg, #D4FBCD 0%, #E9DEFF 100%) 0% 0% no-repeat padding-box
